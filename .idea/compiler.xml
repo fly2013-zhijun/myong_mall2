@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myong_mall_manage_api_server" />
+        <module name="myong_mall_manage_common" />
+        <module name="myong_mall_manage_upload_server_service" />
+        <module name="myong_mall_manage_goods_server_service" />
+        <module name="myong_mall_manage_upload_server_interface" />
+        <module name="myong_mall_manage_goods_server_interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="myong_mall_manage_api_server" target="1.8" />
+      <module name="myong_mall_manage_common" target="1.8" />
+      <module name="myong_mall_manage_goods_server" target="1.8" />
+      <module name="myong_mall_manage_goods_server (1)" target="1.8" />
+      <module name="myong_mall_manage_goods_server_interface" target="1.8" />
+      <module name="myong_mall_manage_goods_server_service" target="1.8" />
+      <module name="myong_mall_manage_parent" target="1.8" />
+      <module name="myong_mall_manage_upload_server" target="1.8" />
+      <module name="myong_mall_manage_upload_server_interface" target="1.8" />
+      <module name="myong_mall_manage_upload_server_service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="myong_mall_manage_api_server" options="-parameters" />
+      <module name="myong_mall_manage_common" options="-parameters" />
+      <module name="myong_mall_manage_goods_server" options="-parameters" />
+      <module name="myong_mall_manage_goods_server_interface" options="-parameters" />
+      <module name="myong_mall_manage_goods_server_service" options="-parameters" />
+      <module name="myong_mall_manage_upload_server" options="-parameters" />
+      <module name="myong_mall_manage_upload_server_interface" options="-parameters" />
+      <module name="myong_mall_manage_upload_server_service" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/myong_mall.iml" filepath="$PROJECT_DIR$/.idea/myong_mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_api_server/myong_mall_manage_api_server.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_api_server/myong_mall_manage_api_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_common/myong_mall_manage_common.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_common/myong_mall_manage_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_goods_server (1).iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_goods_server (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server_interface/myong_mall_manage_goods_server_interface.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server_interface/myong_mall_manage_goods_server_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server_service/myong_mall_manage_goods_server_service.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_goods_server/myong_mall_manage_goods_server_service/myong_mall_manage_goods_server_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_parent.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server_interface/myong_mall_manage_upload_server_interface.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server_interface/myong_mall_manage_upload_server_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server_service/myong_mall_manage_upload_server_service.iml" filepath="$PROJECT_DIR$/myong_mall_manage_parent/myong_mall_manage_upload_server/myong_mall_manage_upload_server_service/myong_mall_manage_upload_server_service.iml" />
+    </modules>
+  </component>
+</project>
