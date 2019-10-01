@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myong_mall_manage_goods_server</artifactId>
+        <groupId>com.myong.mall.manage</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myong.mall.manage</groupId>
+    <artifactId>myong_mall_manage_goods_server_interface</artifactId>
+    <description>商品业务接口模块</description>
+
+    <dependencies>
+        <!--   springdatajpa orm 依赖     -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--  longback      -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--  apache提供的一些工具类依赖      -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <!-- 依赖不被继承,本模块时要需要使用该依赖时要显示的引入 -->
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.myong.mall.manage</groupId>
+            <artifactId>myong_mall_manage_common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
+    </dependencies>
+</project>

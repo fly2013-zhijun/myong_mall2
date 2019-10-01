@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myong_mall_manage_parent</artifactId>
+        <groupId>com.myong.mall.manage</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myong.mall.manage</groupId>
+    <artifactId>myong_mall_manage_api_server</artifactId>
+    <description>myong前端交互api模块</description>
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>com.myong.mall.manage</groupId>
+            <artifactId>myong_mall_manage_goods_server_interface</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.myong.mall.manage</groupId>
+            <artifactId>myong_mall_manage_upload_server_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.tobato</groupId>
+            <artifactId>fastdfs-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

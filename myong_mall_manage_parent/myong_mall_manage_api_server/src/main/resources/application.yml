@@ -1,0 +1,53 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: myong-mall-manage-api
+
+  servlet:
+    multipart:                  #文件上传
+      enabled: true
+      max-request-size: 100MB   #一次请求的最大上传大小
+      max-file-size: 10MB       #单个文件的大小
+
+
+
+
+dubbo:
+  application:
+    name: myong-mall-manage-server-consumer
+
+  service:
+    version: 1.0.0
+
+  registry:
+    address: zookeeper://192.168.1.133:2181
+    client: zkclient
+
+#文件上传的一些配置参数
+upload:
+  file:
+    base-url: http://192.168.1.135/
+    allow-types:
+      - image/jpeg
+      - image/png
+      - image/bmp
+  servlet:
+    commonMutilpart:
+      defaultEncoding: UTF-8
+      resolveLazily: true
+      maxInMemorySize: 40960
+      maxUploadSize: 5242880
+
+#文件上传到fastFdfs服务器的配置
+fdfs:
+  tracker-list: #tracker 服务地址
+    - 192.168.1.135:22122
+  so-timeout: 1500       #
+  connect-timeout: 600   #连接超时时间
+  thumb-image:          #缩列图
+    width: 60
+    height: 60
+

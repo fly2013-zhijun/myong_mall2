@@ -1,11 +1,11 @@
 # myong_mall
 
 #### 介绍
-商城
+    商城
 
 #### 软件架构
-软件架构说明
-
+    软件架构说明
+        springboot+dubbo+zookeeper+mybatis+通用mapper
 
 #### 安装教程
 

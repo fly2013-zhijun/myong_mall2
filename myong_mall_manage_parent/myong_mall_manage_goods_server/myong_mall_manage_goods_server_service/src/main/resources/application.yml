@@ -1,0 +1,49 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: myong-mall-manage-goods-service
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.133:3306/mall_goods?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+
+
+
+
+dubbo:
+#服务名称
+  application:
+    name: myong-mall-manage-goods-service-privoder
+#服务版本
+  service:
+    version: 1.0.0
+#服务端口和协议
+  protocol:
+    port: 20081
+    name: dubbo
+
+#注册地址
+  registry:
+    address: zookeeper://192.168.1.133:2181
+    client: zkclient
+#服务扫描包
+  scan:
+    basePackages: myong.mall.manage.goods.api
+
+#pagehelper:
+#  helperDialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: true
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info

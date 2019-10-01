@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myong.mall.manage</groupId>
+    <artifactId>myong_mall_manage_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <description>myong_mall 项目父工程</description>
+    <modules>
+        <module>myong_mall_manage_api_server</module>
+        <module>myong_mall_manage_goods_server</module>
+        <module>myong_mall_manage_common</module>
+        <module>myong_mall_manage_upload_server</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
+
+    <properties>
+
+        <mysql.version>5.1.46</mysql.version>
+        <tkmybatis.version>2.1.5</tkmybatis.version>
+        <dubbo.starter.vesrion>0.2.0</dubbo.starter.vesrion>
+        <dubbo.version>2.6.4</dubbo.version>
+        <zkclient.version>0.1</zkclient.version>
+        <pagehelper-starter>1.2.12</pagehelper-starter>
+        <fastdfs.client.version>1.26.7</fastdfs.client.version>
+        <goods.api.verision>1.0-SNAPSHOT</goods.api.verision>
+        <mall.common.veriosn>1.0-SNAPSHOT</mall.common.veriosn>
+        <upload.api.version>1.0-SNAPSHOT</upload.api.version>
+        <spring.web.version>5.1.8.RELEASE</spring.web.version>
+        <apache.commons.collection.util.version>3.2.2</apache.commons.collection.util.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- mybatis 通用 mapper -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${tkmybatis.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- dubbo -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <!-- springboot 整合dubbo 启动依赖-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.starter.vesrion}</version>
+            </dependency>
+
+            <!-- 注册中心客户端 -->
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient.version}</version>
+            </dependency>
+
+            <!-- 分页助手 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-starter}</version>
+            </dependency>
+
+
+            <!--     文件上传fastdfs-client-->
+            <dependency>
+                <groupId>com.github.tobato</groupId>
+                <artifactId>fastdfs-client</artifactId>
+                <version>${fastdfs.client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.myong.mall.manage</groupId>
+                <artifactId>myong_mall_manage_goods_server_interface</artifactId>
+                <version>${goods.api.verision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.myong.mall.manage</groupId>
+                <artifactId>myong_mall_manage_common</artifactId>
+                <version>${mall.common.veriosn}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.myong.mall.manage</groupId>
+                <artifactId>myong_mall_manage_upload_server_interface</artifactId>
+                <version>${upload.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${apache.commons.collection.util.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: myong-mall-manage-upload-service     #应用名
+
+
+
+dubbo:
+  application:
+    name: myong-mall-manage-upload-service-provider
+
+  service:
+    version: 1.0.0
+
+  protocol:
+    name: dubbo
+    port: 20882
+
+  registry:
+    address: zookeeper://192.168.1.133:2181
+    client: zkclient
+
+  scan:
+    basePackages: myong.mall.manage.upload.api
+
+
+
+fdfs:
+  tracker-list: #tracker 服务地址
+    - 192.168.1.135:22122
+  so-timeout: 1500       #
+  connect-timeout: 600   #连接超时时间
+  thumb-image:          #缩列图
+    width: 60
+    height: 60
+
+
+mall:
+  upload:
+    baseUrl: http://192.168.1.135/
+    allowTypes:
+      - image/jpeg
+      - image/png
+      - image/bmp
