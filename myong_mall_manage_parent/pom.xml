@@ -28,7 +28,7 @@
         <mysql.version>5.1.46</mysql.version>
         <tkmybatis.version>2.1.5</tkmybatis.version>
         <dubbo.starter.vesrion>0.2.0</dubbo.starter.vesrion>
-        <dubbo.version>2.6.4</dubbo.version>
+        <dubbo.version>2.6.12</dubbo.version>
         <zkclient.version>0.1</zkclient.version>
         <pagehelper-starter>1.2.12</pagehelper-starter>
         <fastdfs.client.version>1.26.7</fastdfs.client.version>
