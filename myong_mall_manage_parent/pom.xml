@@ -35,7 +35,7 @@
         <goods.api.verision>1.0-SNAPSHOT</goods.api.verision>
         <mall.common.veriosn>1.0-SNAPSHOT</mall.common.veriosn>
         <upload.api.version>1.0-SNAPSHOT</upload.api.version>
-        <spring.web.version>5.1.8.RELEASE</spring.web.version>
+        <spring.web.version>6.0.0</spring.web.version>
         <apache.commons.collection.util.version>3.2.2</apache.commons.collection.util.version>
     </properties>
 
